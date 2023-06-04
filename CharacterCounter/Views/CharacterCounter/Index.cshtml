@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style type="text/css">
+    .mt-24 {
+        margin-top: 24px;
+    }
+
+    .width-100{
+        width: 100%;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Character Counter</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10">
+        <label>Enter a word or a sentence to find out number of occurance of a character</label>
+        <input type="text" class="form-control" id="txtInputBox">
+        <span class="text-danger" id="spnInputBox"></span>
+    </div>
+    <div class="col-md-2">
+        <button type="button" class="btn btn-secondary mt-24 width-100" id="btnGetCount" onclick="GetCharacterCount();">Get Count</button>
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-md-12" id="dvContent">
+    </div>
+</div>
